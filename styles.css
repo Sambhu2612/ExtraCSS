@@ -1,0 +1,36 @@
+div.child{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+
+div.child:hover {
+    background-color: blue;
+}
+
+input:focus {
+    outline: blueviolet 1px solid;
+}
+
+div::selection{
+    color: brown;
+}
+
+li{
+    list-style: none;
+    font-size: 4rem;
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+li::after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    top: 30px;
+    left: 120px;
+}
